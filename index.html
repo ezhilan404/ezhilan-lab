@@ -174,79 +174,67 @@
           <h2 class="section-title">Security Projects</h2>
         </div>
         <div class="projects-grid">
-          <article class="card reveal-slide left">
-            <h3 class="card-title">Port Scanner</h3>
-            <div class="card-subtitle">python · sockets · networking</div>
-            <p class="card-body">
-              A Python-based port scanner that discovers open ports on a target host and simulates some of
-              the behavior of tools like nmap. Built to understand TCP/IP, sockets, and basic recon.
-            </p>
-            <div class="project-meta">
-              <span class="project-tag">recon</span>
-              <span class="project-tag">networking</span>
+        <!-- Honeypot -->
+        <article class="card project-card reveal-slide left">
+          <div class="project-header-row">
+            <div class="project-title-block">
+              <span class="project-icon">🪪</span>
+              <h3 class="card-title">Honeypot</h3>
             </div>
-          </article>
-          <article class="card reveal-slide right">
-            <h3 class="card-title">Firewall Simulator</h3>
-            <div class="card-subtitle">python · rules engine</div>
-            <p class="card-body">
-              Simulates how firewalls process packets against rule sets. I experiment with allow/deny rules,
-              logging, and how misconfigurations can create security gaps.
-            </p>
-            <div class="project-meta">
-              <span class="project-tag">defense</span>
-              <span class="project-tag">traffic filtering</span>
+            <span class="project-status-pill project-status-armed">[ARMED]</span>
+          </div>
+          <div class="card-subtitle">python · sockets · logging</div>
+          <p class="card-body">
+            Mission: observe attacker behavior in a controlled environment. Python socket-based honeypot that listens
+            for incoming connections, simulates a weak target and logs interaction attempts for analysis.
+          </p>
+          <div class="project-meta">
+            <span class="project-tag">deception</span>
+            <span class="project-tag">logging</span>
+          </div>
+        </article>
+
+        <!-- Firewall Simulator -->
+        <article class="card project-card reveal-slide right">
+          <div class="project-header-row">
+            <div class="project-title-block">
+              <span class="project-icon">🛡</span>
+              <h3 class="card-title">Firewall Simulator</h3>
             </div>
-          </article>
-          <article class="card reveal-slide left">
-            <h3 class="card-title">Honeypot</h3>
-            <div class="card-subtitle">python · sockets</div>
-            <p class="card-body">
-              A honeypot that listens on specific ports, logs incoming connections, and lets me study
-              attacker behavior in a controlled environment.
-            </p>
-            <div class="project-meta">
-              <span class="project-tag">deception</span>
-              <span class="project-tag">logging</span>
+            <span class="project-status-pill project-status-active">[ACTIVE]</span>
+          </div>
+          <div class="card-subtitle">python · rules engine</div>
+          <p class="card-body">
+            Mission: understand packet filtering and rule evaluation. A simulated firewall that applies allow/deny
+            rules to packets based on ports, protocols and addresses, with logging for each decision.
+          </p>
+          <div class="project-meta">
+            <span class="project-tag">defense</span>
+            <span class="project-tag">traffic filtering</span>
+          </div>
+        </article>
+
+        <!-- Web Vulnerability Scanner -->
+        <article class="card project-card reveal-slide left">
+          <div class="project-header-row">
+            <div class="project-title-block">
+              <span class="project-icon">🔍</span>
+              <h3 class="card-title">Web Vulnerability Scanner</h3>
             </div>
-          </article>
-          <article class="card reveal-slide right">
-            <h3 class="card-title">Keylogger Detector</h3>
-            <div class="card-subtitle">python</div>
-            <p class="card-body">
-              A detection-focused project to spot suspicious keylogging activity based on basic behavior
-              patterns. Helped me understand how keyloggers work under the hood — and how to fight them.
-            </p>
-            <div class="project-meta">
-              <span class="project-tag">detection</span>
-              <span class="project-tag">host security</span>
-            </div>
-          </article>
-          <article class="card reveal-slide left">
-            <h3 class="card-title">Password Strength Analyzer</h3>
-            <div class="card-subtitle">python</div>
-            <p class="card-body">
-              Scores password strength based on length, character variety, and patterns. A simple project
-              with a big impact on understanding real-world password weaknesses.
-            </p>
-            <div class="project-meta">
-              <span class="project-tag">defense</span>
-              <span class="project-tag">auth</span>
-            </div>
-          </article>
-          <article class="card reveal-slide right">
-            <h3 class="card-title">Web Vulnerability Scanner</h3>
-            <div class="card-subtitle">python · http</div>
-            <p class="card-body">
-              A basic scanner that checks web targets for common security misconfigurations and simple
-              vulnerabilities, giving me hands-on experience with web app security.
-            </p>
-            <div class="project-meta">
-              <span class="project-tag">web security</span>
-              <span class="project-tag">automation</span>
-            </div>
-          </article>
-        </div>
+            <span class="project-status-pill project-status-scan">[SCANNING...]</span>
+          </div>
+          <div class="card-subtitle">python · http · recon</div>
+          <p class="card-body">
+            Mission: automate recon and surface web weaknesses. A Python-based scanner that sends crafted requests and
+            checks for common issues like SQLi, XSS and insecure headers based on response patterns.
+          </p>
+          <div class="project-meta">
+            <span class="project-tag">web security</span>
+            <span class="project-tag">automation</span>
+          </div>
+        </article>
+      </div>
+
       </div>
     </section>
 
