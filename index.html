@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ezhilan | Cybersecurity Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Matrix background -->
+  <canvas id="matrix-bg"></canvas>
+  <div class="scanlines"></div>
+
+  <!-- Boot overlay -->
+  <div id="boot-overlay" class="boot-overlay">
+    <div class="boot-inner">
+      <div class="boot-logo">ezhilan@net:~/cyber_lab</div>
+      <pre id="boot-log" class="boot-log"></pre>
+    </div>
+  </div>
+
+  <!-- Main site -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="status-dot"></div>
+        <span>ezhilan@net</span><span>:~/cyber_lab</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero" class="scroll-link">home</a>
+        <a href="#about" class="scroll-link">about</a>
+        <a href="#skills" class="scroll-link">skills</a>
+        <a href="#projects" class="scroll-link">projects</a>
+        <a href="#notes" class="scroll-link">notes</a>
+        <a href="#contact" class="scroll-link">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="reveal-slide left">
+          <div class="hero-badge">
+            <span>●</span> ACTIVE NODE · CYBERSECURITY
+          </div>
+          <h1 class="hero-title">Hi, I’m <span>Ezhilan</span></h1>
+          <div class="hero-subtitle">
+            <div id="subtitle-text"></div>
+            <div class="caret"></div>
+          </div>
+          <p class="hero-text">
+            I explore how systems break — and how to defend them — by building
+            <strong>Cyber Security tools</strong>, and more. This lab is my corner of the internet for
+            experiments in <strong>ethical hacking</strong>, <strong>digital forensics</strong>, and
+            <strong>AI + security</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn scroll-link">View my cyber lab</a>
+            <a href="#contact" class="btn secondary scroll-link">Deploy a message</a>
+          </div>
+          <div class="hero-meta">
+            <span>STATUS: learning · building · breaking (ethically)</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal-slide right">
+          <div class="hero-panel-header">
+            <div class="window-dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="hero-panel-title">/terminal/logs/boot_sequence.log</div>
+          </div>
+          <div class="hero-panel-body" id="terminal-output"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal-slide left">
+          <span class="section-tag">// profile</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card reveal-slide left">
+            <h3 class="card-title">Who am I?</h3>
+            <p class="card-body">
+              I’m a student just starting my journey into ethical hacking, with a growing obsession for
+              network security and red-team style thinking. I like to see what really happens behind the
+              screens – the packets, protocols, and hidden paths that most people never think about.
+            </p>
+            <p class="card-body" style="margin-top: 0.6rem;">
+              I’m not here to just run tools, I want to understand them. I learn by building things from
+              scratch instead of relying only on ready-made tools, because fundamentals matter more than
+              shortcuts. Long term, my goal is simple: get really good at ethical hacking and turn this
+              curiosity into a career in cybersecurity.
+            </p>
+
+          </div>
+          <div class="card reveal-slide right">
+            <h3 class="card-title">Focus Areas</h3>
+            <p class="card-body">
+              I’m especially interested in:
+            </p>
+            <ul class="notes-list" style="margin-top:0.7rem;">
+              <li><span>&gt;</span>Network security & traffic analysis</li>
+              <li><span>&gt;</span>Web application security</li>
+              <li><span>&gt;</span>Digital forensics & incident reconstruction</li>
+              <li><span>&gt;</span>AI-assisted detection & analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal-slide right">
+          <span class="section-tag">// toolkit</span>
+          <h2 class="section-title">Skills & Stack</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card reveal-slide left">
+            <h3 class="card-title">Security Concepts</h3>
+            <p class="card-body">
+              I practice core security ideas by building them: scanners, honeypots, firewalls, and detectors.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Port scanning</span>
+              <span class="pill">Honeypots</span>
+              <span class="pill">Firewall rules</span>
+              <span class="pill">Keylogger detection</span>
+              <span class="pill">Web vulns basics</span>
+            </div>
+          </div>
+          <div class="card reveal-slide right">
+            <h3 class="card-title">Tech & Tools</h3>
+            <p class="card-body">
+              My primary language is Python, with a growing toolkit around it.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Sockets</span>
+              <span class="pill">Wireshark</span>
+              <span class="pill">Nmap</span>
+              <span class="pill">Linux basics</span>
+              <span class="pill">Virtual machines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal-slide left">
+          <span class="section-tag">// lab</span>
+          <h2 class="section-title">Security Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="card reveal-slide left">
+            <h3 class="card-title">Port Scanner</h3>
+            <div class="card-subtitle">python · sockets · networking</div>
+            <p class="card-body">
+              A Python-based port scanner that discovers open ports on a target host and simulates some of
+              the behavior of tools like nmap. Built to understand TCP/IP, sockets, and basic recon.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">recon</span>
+              <span class="project-tag">networking</span>
+            </div>
+          </article>
+          <article class="card reveal-slide right">
+            <h3 class="card-title">Firewall Simulator</h3>
+            <div class="card-subtitle">python · rules engine</div>
+            <p class="card-body">
+              Simulates how firewalls process packets against rule sets. I experiment with allow/deny rules,
+              logging, and how misconfigurations can create security gaps.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">defense</span>
+              <span class="project-tag">traffic filtering</span>
+            </div>
+          </article>
+          <article class="card reveal-slide left">
+            <h3 class="card-title">Honeypot</h3>
+            <div class="card-subtitle">python · sockets</div>
+            <p class="card-body">
+              A honeypot that listens on specific ports, logs incoming connections, and lets me study
+              attacker behavior in a controlled environment.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">deception</span>
+              <span class="project-tag">logging</span>
+            </div>
+          </article>
+          <article class="card reveal-slide right">
+            <h3 class="card-title">Keylogger Detector</h3>
+            <div class="card-subtitle">python</div>
+            <p class="card-body">
+              A detection-focused project to spot suspicious keylogging activity based on basic behavior
+              patterns. Helped me understand how keyloggers work under the hood — and how to fight them.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">detection</span>
+              <span class="project-tag">host security</span>
+            </div>
+          </article>
+          <article class="card reveal-slide left">
+            <h3 class="card-title">Password Strength Analyzer</h3>
+            <div class="card-subtitle">python</div>
+            <p class="card-body">
+              Scores password strength based on length, character variety, and patterns. A simple project
+              with a big impact on understanding real-world password weaknesses.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">defense</span>
+              <span class="project-tag">auth</span>
+            </div>
+          </article>
+          <article class="card reveal-slide right">
+            <h3 class="card-title">Web Vulnerability Scanner</h3>
+            <div class="card-subtitle">python · http</div>
+            <p class="card-body">
+              A basic scanner that checks web targets for common security misconfigurations and simple
+              vulnerabilities, giving me hands-on experience with web app security.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">web security</span>
+              <span class="project-tag">automation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notes -->
+    <section id="notes" class="section">
+      <div class="container">
+        <div class="section-header reveal-slide right">
+          <span class="section-tag">// logs</span>
+          <h2 class="section-title">Notes & Writeups</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card reveal-slide left">
+            <h3 class="card-title">Incoming writeups</h3>
+            <p class="card-body">
+              I’m building a collection of writeups to document my experiments, mistakes, and lessons:
+            </p>
+            <ul class="notes-list" style="margin-top:0.8rem;">
+              <li><span>[soon]</span>Building and analyzing a honeypot in Python</li>
+              <li><span>[soon]</span>How port scanners really work</li>
+              <li><span>[soon]</span>First steps into digital forensics</li>
+              <li><span>[soon]</span>Experimenting with AI + detection</li>
+            </ul>
+          </div>
+          <div class="card reveal-slide right">
+            <h3 class="card-title">Changelog</h3>
+            <p class="card-body">
+              I treat this site like a live lab. New tools, upgrades, and experiments will appear here over
+              time — a public changelog for my cybersecurity journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal-slide left">
+          <span class="section-tag">// contact</span>
+          <h2 class="section-title">Reach Out</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="card contact-info reveal-slide left">
+            <h3 class="card-title">Let’s talk</h3>
+            <p class="card-body">
+              If you’d like to talk about cybersecurity, collaborate on a project, or discuss an opportunity,
+              drop a message.
+            </p>
+            <p class="card-body">
+              <strong>Email:</strong>
+              <a href="mailto:ezhilan.404@gmail.com">ezhilan.404@gmail.com</a>
+            </p>
+            <p class="card-body">
+              <strong>GitHub:</strong>
+              <a href="https://github.com/ezhilan404" target="_blank" rel="noopener">github.com/ezhilan404</a>
+            </p>
+            <p class="card-body">
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/ezhilan-t-3565ba38a/" target="_blank" rel="noopener">linkedin.com/in/ezhilan-t</a>
+            </p>
+          </div>
+          <div class="card reveal-slide right">
+            <h3 class="card-title">Quick message</h3>
+            <form class="contact-form" onsubmit="return false;">
+              <div>
+                <label class="field-label">name</label>
+                <input class="input" type="text" placeholder="anonymous" />
+              </div>
+              <div>
+                <label class="field-label">email</label>
+                <input class="input" type="email" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label class="field-label">message</label>
+                <textarea class="textarea" placeholder="what do you want to build / discuss?"></textarea>
+              </div>
+              <button type="submit" class="btn secondary">
+                simulate send (frontend only)
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-meta">© <span id="year"></span> ezhilan · all rights reserved</div>
+      <div class="footer-meta">// built with html · css · js · curiosity</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/boot.js"></script>
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/reveal.js"></script>
+  <script src="assets/js/typewriter.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
