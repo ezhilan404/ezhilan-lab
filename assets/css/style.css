@@ -356,7 +356,7 @@ main {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 0.78rem;
   color: #bbf7d0;
-  line-height: 1.7;
+  line-height: 1.2;
   max-height: 220px;
   overflow: hidden;
 }
