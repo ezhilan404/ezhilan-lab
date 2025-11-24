@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"></stop>
+      <stop offset="100%" stop-color="#000000"></stop>
+    </linearGradient>
+
+    <!-- Matrix rain specks -->
+    <pattern id="dots" width="18" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="rgba(0,255,180,0.22)"></circle>
+    </pattern>
+
+    <!-- neon text glow -->
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background layers -->
+  <rect width="1200" height="630" fill="url(#bg)"></rect>
+  <rect width="1200" height="630" fill="url(#dots)" opacity="0.28"></rect>
+
+  <!-- Text -->
+  <text x="80" y="180" font-family="JetBrains Mono, monospace" font-size="78" fill="#00ffd0" filter="url(#neon)">
+    &gt; SYSTEM ONLINE
+  </text>
+
+  <text x="80" y="280" font-family="JetBrains Mono, monospace" font-size="62" fill="#22ff88" filter="url(#neon)">
+    EZHILAN — CYBERSECURITY LAB
+  </text>
+
+  <text x="80" y="350" font-family="JetBrains Mono, monospace" font-size="38" fill="#e5fff4">
+    building and breaking into systems... legally
+  </text>
+
+  <!-- scanlines effect -->
+  <rect width="1200" height="630" fill="url(#scan)" opacity="0.13"></rect>
+</svg>
