@@ -306,23 +306,45 @@
           </div>
           <div class="card reveal-slide right">
             <h3 class="card-title">Quick message</h3>
-            <form class="contact-form" onsubmit="return false;">
+            <form id="contact-form" class="contact-form">
               <div>
                 <label class="field-label">name</label>
-                <input class="input" type="text" placeholder="anonymous" />
+                <input
+                  class="input"
+                  type="text"
+                  name="from_name"
+                  placeholder="anonymous"
+                  required
+                />
               </div>
               <div>
                 <label class="field-label">email</label>
-                <input class="input" type="email" placeholder="you@example.com" />
+                <input
+                  class="input"
+                  type="email"
+                  name="reply_to"
+                  placeholder="you@example.com"
+                  required
+                />
               </div>
               <div>
                 <label class="field-label">message</label>
-                <textarea class="textarea" placeholder="what do you want to build / discuss?"></textarea>
+                <textarea
+                  class="textarea"
+                  name="message"
+                  placeholder="what do you want to build / discuss?"
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="btn secondary">
-                simulate send (frontend only)
+
+              <button type="submit" class="btn secondary" id="contact-submit">
+                Send message
               </button>
+
+              <!-- status text -->
+              <p id="contact-status" class="contact-status"></p>
             </form>
+
           </div>
         </div>
       </div>
@@ -339,6 +361,12 @@
     © 2025 ezhilan — built with html · css · js · curiosity
   </div>
 </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Your contact form logic -->
+  <script src="assets/js/contact.js"></script>
 
 
   <script src="assets/js/matrix.js"></script>

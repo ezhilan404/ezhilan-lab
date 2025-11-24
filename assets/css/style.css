@@ -566,6 +566,21 @@ main {
   font-size: 0.85rem;
 }
 
+.contact-status {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-family: "JetBrains Mono", monospace;
+  opacity: 0.9;
+}
+
+.contact-status.success {
+  color: #4ade80; /* green */
+}
+
+.contact-status.error {
+  color: #f97373; /* soft red */
+}
+
 .field-label {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 0.75rem;
