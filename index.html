@@ -360,6 +360,48 @@
   <div class="footer-meta">
     © 2025 ezhilan — built with html · css · js · curiosity
   </div>
+
+<!-- Hidden lab terminal -->
+<div id="lab-terminal" class="lab-terminal">
+  <div class="lab-terminal-window">
+    <div class="lab-terminal-header">
+      <span class="lab-dot lab-dot-red"></span>
+      <span class="lab-dot lab-dot-yellow"></span>
+      <span class="lab-dot lab-dot-green"></span>
+
+      <span class="lab-terminal-title">ez@lab:~</span>
+      <span class="lab-terminal-hint">press ESC to close</span>
+    </div>
+
+    <form id="lab-terminal-form" class="lab-terminal-input-row" autocomplete="off">
+      <span class="lab-prompt">ez@lab:~$</span>
+      <input id="lab-terminal-input" class="lab-terminal-input" type="text" />
+    </form>
+
+    <div id="lab-terminal-output" class="lab-terminal-output"></div>
+  </div>
+
+
+  <!-- Radar scanner panel (shown by command) -->
+  <div id="lab-radar" class="lab-radar">
+    <div class="radar-circle radar-circle-outer"></div>
+    <div class="radar-circle radar-circle-mid"></div>
+    <div class="radar-circle radar-circle-inner"></div>
+    <div class="radar-sweep"></div>
+    <div class="radar-dots"></div>
+  </div>
+</div>
+
+<!-- Self-destruct overlay -->
+<div id="self-destruct-overlay" class="self-destruct-overlay">
+  <div class="self-destruct-content">
+    <div class="self-destruct-text">SELF DESTRUCT SEQUENCE INITIATED</div>
+    <div class="self-destruct-countdown" id="self-destruct-countdown">5</div>
+    <div class="self-destruct-sub">relax. this is only a simulation.</div>
+  </div>
+</div>
+
+
 </footer>
 
   <!-- EmailJS SDK -->
@@ -375,5 +417,7 @@
   <script src="assets/js/reveal.js"></script>
   <script src="assets/js/typewriter.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/terminal.js"></script>
+
 </body>
 </html>
