@@ -489,6 +489,11 @@ main {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+.project-status-armed[variant="flagship"] {
+  border-color: rgba(34,197,94,0.9);
+  box-shadow: 0 0 18px rgba(34,197,94,0.5);
+  color: #bbf7d0;
+}
 
 /* small breathing / status effect */
 .project-status-armed,
